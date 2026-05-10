@@ -1,0 +1,48 @@
+
+=== Model: EarlyFusion ===
+Layer                Type           Params
+--------------------------------------------
+conv1                conv               20
+conv2                conv               76
+fc1                  fc             159872
+fc2                  fc              10578
+--------------------------------------------
+Conv total                              96
+FC   total                          170450
+Grand total                         170546
+Conv fraction: 0.0006  (0.06%)
+FC   fraction: 0.9994  (99.94%)
+[EarlyFusion shape check]
+  inputs:       x1=(1, 1, 28, 28)  x2=(1, 1, 28, 28)
+  after concat: (1, 1, 28, 56)      (expect (1,1,28,56))
+  after conv1:  (1, 2, 26, 54)      (expect (1,2,26,54))
+  after conv2:  (1, 4, 24, 52)      (expect (1,4,24,52))
+  after pool:   (1, 4, 12, 26)      (expect (1,4,12,26))
+  after flatten:(1, 1248)              (expect (1,1248))
+MACs: 400.496K, Params (thop): 170.546K
+
+=== Model: LateFusion ===
+Layer                Type           Params
+--------------------------------------------
+conv1                conv              160
+conv2                conv             4640
+fc1                  fc             401536
+fc2                  fc              10578
+--------------------------------------------
+Conv total                            4800
+FC   total                          412114
+Grand total                         416914
+Conv fraction: 0.0115  (1.15%)
+FC   fraction: 0.9885  (98.85%)
+MACs: 2.444M, Params (thop): 416.914K
+
+================ FINAL SUMMARY ================
+fusion         optimizer   final_train_acc  final_test_acc  best_val_epoch   best_ckpt_test_acc
+early_fusion   Adam                 0.7354          0.6730               9               0.6730
+early_fusion   RMSprop              0.9120          0.7975               9               0.7975
+early_fusion   AdamW                0.8894          0.7805               9               0.7805
+late_fusion    Adam                 0.9308          0.8565               9               0.8565
+late_fusion    RMSprop              0.9570          0.8540               6               0.8750
+late_fusion    AdamW                0.9805          0.8820               9               0.8820
+
+Wrote final_summary.json

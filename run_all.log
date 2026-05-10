@@ -1,0 +1,11 @@
+[run]  early_fusion Adam  ->  logs/early_fusion_Adam.log
+[done] early_fusion Adam  exit=0
+[run]  early_fusion RMSprop  ->  logs/early_fusion_RMSprop.log
+[done] early_fusion RMSprop  exit=0
+[run]  early_fusion AdamW  ->  logs/early_fusion_AdamW.log
+[done] early_fusion AdamW  exit=0
+[skip] late_fusion Adam already complete
+[skip] late_fusion RMSprop already complete
+[skip] late_fusion AdamW already complete
+[aggregate]
+[all done]

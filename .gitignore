@@ -1,0 +1,19 @@
+# Large data files
+*.npy
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Claude
+.claude/

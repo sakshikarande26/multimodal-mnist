@@ -1,0 +1,78 @@
+{
+    "runs": [
+        {
+            "fusion": "early_fusion",
+            "optimizer": "Adam",
+            "final_train_acc": 0.7354,
+            "final_test_acc": 0.673,
+            "best_val_epoch": 9,
+            "best_val_acc": 0.677,
+            "best_ckpt_test_acc": 0.673
+        },
+        {
+            "fusion": "early_fusion",
+            "optimizer": "RMSprop",
+            "final_train_acc": 0.912,
+            "final_test_acc": 0.7975,
+            "best_val_epoch": 9,
+            "best_val_acc": 0.8165,
+            "best_ckpt_test_acc": 0.7975
+        },
+        {
+            "fusion": "early_fusion",
+            "optimizer": "AdamW",
+            "final_train_acc": 0.8894,
+            "final_test_acc": 0.7805,
+            "best_val_epoch": 9,
+            "best_val_acc": 0.797,
+            "best_ckpt_test_acc": 0.7805
+        },
+        {
+            "fusion": "late_fusion",
+            "optimizer": "Adam",
+            "final_train_acc": 0.9308,
+            "final_test_acc": 0.8565,
+            "best_val_epoch": 9,
+            "best_val_acc": 0.867,
+            "best_ckpt_test_acc": 0.8565
+        },
+        {
+            "fusion": "late_fusion",
+            "optimizer": "RMSprop",
+            "final_train_acc": 0.957,
+            "final_test_acc": 0.854,
+            "best_val_epoch": 6,
+            "best_val_acc": 0.8885,
+            "best_ckpt_test_acc": 0.875
+        },
+        {
+            "fusion": "late_fusion",
+            "optimizer": "AdamW",
+            "final_train_acc": 0.9805,
+            "final_test_acc": 0.882,
+            "best_val_epoch": 9,
+            "best_val_acc": 0.8825,
+            "best_ckpt_test_acc": 0.882
+        }
+    ],
+    "complexity": [
+        {
+            "model": "EarlyFusion",
+            "conv_params": 96,
+            "fc_params": 170450,
+            "other_params": 0,
+            "total_params": 170546,
+            "conv_fraction": 0.0005628979864669943,
+            "fc_fraction": 0.999437102013533
+        },
+        {
+            "model": "LateFusion",
+            "conv_params": 4800,
+            "fc_params": 412114,
+            "other_params": 0,
+            "total_params": 416914,
+            "conv_fraction": 0.011513165784790148,
+            "fc_fraction": 0.9884868342152099
+        }
+    ]
+}

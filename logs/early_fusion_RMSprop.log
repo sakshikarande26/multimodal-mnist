@@ -1,0 +1,170 @@
+Using device: mps
+############# epoch:  0
+[EarlyFusion shape check]
+  inputs:       x1=(1, 1, 28, 28)  x2=(1, 1, 28, 28)
+  after concat: (1, 1, 28, 56)      (expect (1,1,28,56))
+  after conv1:  (1, 2, 26, 54)      (expect (1,2,26,54))
+  after conv2:  (1, 4, 24, 52)      (expect (1,4,24,52))
+  after pool:   (1, 4, 12, 26)      (expect (1,4,12,26))
+  after flatten:(1, 1248)              (expect (1,1248))
+Train Epoch: 0	Loss: 4.414214
+Train Epoch: 0	Loss: 3.171282
+Train Epoch: 0	Loss: 2.439792
+Train Epoch: 0	Loss: 1.774982
+
+Train loss: 2.614927, acc: 0.431100
+
+
+Val loss:   1.994933, acc: 0.406500
+
+
+Test loss:  2.029675, acc: 0.400000
+
+############# End of epoch:  0
+
+############# epoch:  1
+Train Epoch: 1	Loss: 1.616397
+Train Epoch: 1	Loss: 1.898850
+Train Epoch: 1	Loss: 1.875067
+Train Epoch: 1	Loss: 2.070147
+
+Train loss: 1.727160, acc: 0.593100
+
+
+Val loss:   1.510504, acc: 0.549500
+
+
+Test loss:  1.503838, acc: 0.552000
+
+############# End of epoch:  1
+
+############# epoch:  2
+Train Epoch: 2	Loss: 1.226390
+Train Epoch: 2	Loss: 1.177398
+Train Epoch: 2	Loss: 1.371435
+Train Epoch: 2	Loss: 0.750095
+
+Train loss: 1.304749, acc: 0.684500
+
+
+Val loss:   1.185851, acc: 0.652500
+
+
+Test loss:  1.208186, acc: 0.630500
+
+############# End of epoch:  2
+
+############# epoch:  3
+Train Epoch: 3	Loss: 1.788752
+Train Epoch: 3	Loss: 1.181090
+Train Epoch: 3	Loss: 1.057479
+Train Epoch: 3	Loss: 1.309275
+
+Train loss: 1.040444, acc: 0.765100
+
+
+Val loss:   0.967761, acc: 0.722000
+
+
+Test loss:  1.017821, acc: 0.703000
+
+############# End of epoch:  3
+
+############# epoch:  4
+Train Epoch: 4	Loss: 1.001652
+Train Epoch: 4	Loss: 0.747318
+Train Epoch: 4	Loss: 0.927184
+Train Epoch: 4	Loss: 1.019342
+
+Train loss: 0.883630, acc: 0.797200
+
+
+Val loss:   0.883428, acc: 0.742500
+
+
+Test loss:  0.882709, acc: 0.725500
+
+############# End of epoch:  4
+
+############# epoch:  5
+Train Epoch: 5	Loss: 0.676442
+Train Epoch: 5	Loss: 0.640524
+Train Epoch: 5	Loss: 0.723376
+Train Epoch: 5	Loss: 0.902464
+
+Train loss: 0.771411, acc: 0.824800
+
+
+Val loss:   0.811351, acc: 0.763000
+
+
+Test loss:  0.824705, acc: 0.749000
+
+############# End of epoch:  5
+
+############# epoch:  6
+Train Epoch: 6	Loss: 0.776580
+Train Epoch: 6	Loss: 0.666873
+Train Epoch: 6	Loss: 0.594818
+Train Epoch: 6	Loss: 0.575917
+
+Train loss: 0.696517, acc: 0.833500
+
+
+Val loss:   0.790506, acc: 0.769500
+
+
+Test loss:  0.833504, acc: 0.748500
+
+############# End of epoch:  6
+
+############# epoch:  7
+Train Epoch: 7	Loss: 1.062426
+Train Epoch: 7	Loss: 1.095555
+Train Epoch: 7	Loss: 0.821723
+Train Epoch: 7	Loss: 0.658963
+
+Train loss: 0.638815, acc: 0.871500
+
+
+Val loss:   0.717592, acc: 0.788000
+
+
+Test loss:  0.732402, acc: 0.777000
+
+############# End of epoch:  7
+
+############# epoch:  8
+Train Epoch: 8	Loss: 0.865956
+Train Epoch: 8	Loss: 0.661995
+Train Epoch: 8	Loss: 0.785039
+Train Epoch: 8	Loss: 0.570965
+
+Train loss: 0.591027, acc: 0.875700
+
+
+Val loss:   0.728433, acc: 0.789000
+
+
+Test loss:  0.742040, acc: 0.770000
+
+############# End of epoch:  8
+
+############# epoch:  9
+Train Epoch: 9	Loss: 0.370687
+Train Epoch: 9	Loss: 0.569149
+Train Epoch: 9	Loss: 0.623398
+Train Epoch: 9	Loss: 0.212699
+
+Train loss: 0.544878, acc: 0.912000
+
+
+Val loss:   0.624303, acc: 0.816500
+
+
+Test loss:  0.654081, acc: 0.797500
+
+############# End of epoch:  9
+
+Best epoch: 9, Test loss:  0.654081, Test acc:  0.797500
+

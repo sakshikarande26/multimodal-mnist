@@ -1,0 +1,9 @@
+{
+    "test_loss": 0.6540808294500623,
+    "test_acc": 0.7975,
+    "val_acc": 0.8165,
+    "val_loss": 0.6243026410303418,
+    "epoch": 9,
+    "final_train_acc": 0.912,
+    "final_test_acc": 0.7975
+}
