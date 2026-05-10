@@ -1,4 +1,4 @@
-# HW6 Q3 — Multimodal MNIST Classification
+Multimodal MNIST Classification
 
 All numbers below come from one deterministic run of `hw6_q3_template.py`
 (seed = 42, batch size = 32, 10 epochs, MPS device on Apple Silicon).
